@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&family=Open+Sans:wght@400;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+section{
+    padding: 100px 0;
+}
+
+/* .navigation styling */
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    font-family: 'ubuntu', sans-serif;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+    background-color: darkblue;
+
+}
+
+
+.navbar .menu li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.navbar .menu li a:hover{
+    color: blueviolet;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.logo img{
+    float: left;
+    width: 200px;
+    height: auto;
+}
+
+.logo img:hover{
+    font-size: 60px;
+    font-weight: 600;
+    color: #020202;
+    transition: all 0.3s ease;
+}
+
+
+.navbar .menu li{
+    display: inline-block;
+}
+
+.navbar .menu li:hover{
+    color: green;
+    transition: all 0.3s ease;
+}
+
+.max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 100px;
+}
+
+
+/* Home Styling */
+
+.home{
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 256, 0.5), rgba(0, 0, 256, 0.5)), url(images/b.png) no-repeat center;
+    height: 150vh;
+    min-height: 500px;
+    font-family: 'Playfair Display', serif;
+    background-size: cover;
+}
+
+.home .home-content{
+    font-size: 60px;
+    padding-top: 380px;
+    color: rgb(241, 205, 159);
+    text-shadow: hotpink 3px 3px 3px;
+    margin-left: auto;
+}
+
+.menu-btn{
+    display: none;
+}
+
+/* Other pages lstyling */
+
+.home .max-width a{
+    text-align: center;
+    font-size: 40px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background: grey;
+    color: whitesmoke;
+    margin-left: 265px;
+    transition: all 0.8s ease;
+}
+
+.home .max-width a:hover{
+    background: none;
+    border: 2px solid whitesmoke;
+    color: #fff;
+}
+
+/* About Page */ 
+
+.about .max-width .card img{
+    width: 500px;
+    height: 400px;
+    color: red;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: 35px;
+    border-radius: 600px;
+}
+
+.about .right h3{
+    font-size: 55px;
+    padding-bottom: 30px;
+}
+
+.about .right a{
+    font-size: 20px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 30px;
+    margin: 20px 0;
+    transition: all 0.8s;
+}
+
+.about .right a:hover{
+    background: none;
+    border: 2px solid blue;
+    color: black;
+}
+
+.about .right p{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+/* Portrait Section Styling */
+
+section .portrait-2 .card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+section .portrait-2 .card img{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.portrait{
+    margin: 0 20px;
+}
+
+/* Live Section Styling */
+
+section .live .card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 22px;
+}
+
+section .live .card img{
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.portrait{
+    margin: 0 20px;
+}
+
+.live .title::after{
+    content: "Live Stream";
+    position: absolute;
+    background: white;
+    bottom: -12px;
+    left: 50%;
+    color: red;
+    padding: 5px;
+    font-size: 20px;
+    transform: translateX(-50%);
+}
+
+section .live .card h3{
+    font-size: 35px;
+    font-weight: 600px;
+    padding: 10px 0;
+}
+
+section .live .card p{
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+section .live .card .btn a{
+    background: #130cd6;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: whitesmoke;
+    transition: 0.8s ease;
+}
+
+section .live .card .btn a:hover{
+    background: none;
+    border: 2px solid red;
+    color: red;
+}
+
+/* Contact Page styling */
+
+.contact .title::after{
+    content: "Contact Us";
+    position: absolute;
+    background: white;
+    bottom: -12px;
+    left: 50%;
+    color: red;
+    padding: 5px;
+    font-size: 20px;
+    transform: translateX(-50%);
+}
+
+.iframe{
+    border-radius: 10px;
+}
+
+.contact .max-width .card .left .address{
+    background: lightgray;
+    padding: 20px;
+    color: red;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 450px;
+    align-items: center;
+}
+
+.contact .max-width .card .left .address h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact .max-width .card .left .address h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+
+}
+
+.contact .max-width form{
+    background-color: grey;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact .max-width form input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 6px 15px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact .max-width form textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 6px 15px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+
+/*featured section styling*/
+
+section .title{
+    font-family: 'ubuntu', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500px;
+    position: relative;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+section .title::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background: red;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section .title::after{
+    content: "featured";
+    position: absolute;
+    background: white;
+    bottom: -12px;
+    left: 50%;
+    color: red;
+    padding: 5px;
+    font-size: 20px;
+    transform: translateX(-50%);
+}
+
+
+.work{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.swiper{
+    width: 80%;
+    height: fit-content;
+}
+
+swiper-slide{
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* street section styling */
+
+section .max-width .card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .max-width .card img{
+    width: 450px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Services styling */
+
+.Services .title::after{
+    content: "Why Us";
+    position: absolute;
+    background: white;
+    bottom: -12px;
+    left: 50%;
+    color: red;
+    padding: 5px;
+    font-size: 20px;
+    transform: translateX(-50%);
+}
+
+.Services .max-width .card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Services .max-width .card img{
+    width: 500px;
+    height: 400px;
+    color: red;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: 35px;
+    border-radius: 600px;
+}
+
+.Services .right h3{
+    font-size: 55px;
+    padding-bottom: 30px;
+}
+
+.Services .right a{
+    font-size: 20px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 30px;
+    margin: 20px 0;
+    transition: all 0.8s;
+}
+
+.Services .right a:hover{
+    background: none;
+    border: 2px solid blue;
+    color: black;
+}
+
+.Services .right p{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+/* footer */
+
+footer{
+    background: #130cd6;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+footer a{
+    color: red;
+    font-size: 20px;
+}
+
+/* Responsive Media Query */
+
+@media (max-width: 700px){
+
+
+    .menu-btn{
+        display: inline-block;
+    }
+
+    .max-width{
+        padding: 0 40px;
+
+    }
+
+    .navbar .menu{
+        position: fixed;
+        background:  black;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 10px 0px;
+        font-size: 17px;
+    }
+
+}
